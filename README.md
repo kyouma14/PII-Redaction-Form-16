@@ -24,11 +24,9 @@ PDF → pdftotext → Regex-based PII scrubber → Dictionary filter → filtere
 ## 2. Installation & Setup
 ### 2.1 Prerequisites
 * **Go 1.24+**
-* **Poppler utils** (`pdftotext`) – required for text extraction.
+* **Poppler utils** (`pdftotext`) – required for text extraction. (https://github.com/oschwartz10612/poppler-windows/releases/tag/v24.08.0-0, extract the zip folder and add /Library/bin to PATH)
 * **Offline English word list** – must be present as `english_words.txt` (one word per line; can include custom allowed terms).
 * **PDF of Form 16** - add its path in line 14 of main.go 
-
-> The file must be UTF-8, lowercase, one word per line.
 
 ### 2.2 Clone, tidy, build, run
 ```bash
