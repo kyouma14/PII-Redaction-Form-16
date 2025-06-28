@@ -11,7 +11,7 @@ import (
 )
 
 // Hard-coded input PDF; change the value below to process a different file.
-const DefaultPDFFile = "Form16_AKJPC0334Q_2025-26.pdf"
+const DefaultPDFFile = "test.pdf"
 
 // PIIFilter contains regex patterns for identifying PII data in Form 16
 type PIIFilter struct {
