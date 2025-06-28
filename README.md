@@ -5,10 +5,6 @@ Redacts phone, email, PAN, TAN, Aadhaar, GSTIN &amp; addresses from Form-16 PDFs
 
 This Go utility extracts text from **Form-16** PDFs and redacts Personally Identifiable Information (PII) while preserving business-relevant data (e.g. GSTINs, tax sections).
 
-Version 2 introduces **offline dictionary redaction** plus a more relaxed heuristic that keeps:
-* all words of ≤ 3 letters ("a", "of", "for", …)
-* any token that mixes letters **and** digits ("12BAA", "Section 192", …)
-
 ---
 ## 1. Redaction Pipeline
 ```
